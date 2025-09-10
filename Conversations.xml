@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations Load="Merge">
+
+    <conversation ID="Star">
+        <node ID="Start">
+            <text>
+                {{emote|*inscrutably being*}}
+            </text>
+            <choice ID="EndChoice" GotoID="End">
+                <text>Live and drink.</text>
+                <part Name="WaterRitualMAFT_LiveAndDrink" />
+            </choice>
+        </node>
+    </conversation>
+
+    <conversation ID="Clams">
+        <node ID="Start">
+            <text>
+                {{emote|*sitting open invitingly*}}
+            </text>
+            <choice ID="EndChoice" GotoID="End">
+                <text>Live and drink.</text>
+                <part Name="WaterRitualMAFT_LiveAndDrink" />
+            </choice>
+        </node>
+    </conversation>
+
+    <conversation ID="BaseConversation" Load="Merge">
+        <node ID="WaterRitual" Load="Merge">
+            <part Name="WaterRitualMAFT_LiveAndDrink" sibPrefix="true"/>
+            <choice ID="EndChoice">
+                <text>Live and drink, =subject.waterRitualLiquid=-=pronouns.siblingTerm=.</text>
+                <part Name="WaterRitualMAFT_LiveAndDrink" sibPrefix="true"/>
+            </choice>
+        </node>
+    </conversation>
+
+</conversations>

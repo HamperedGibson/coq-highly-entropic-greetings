@@ -1,0 +1,10 @@
+{
+	"id": "Highly Entropic Greetings",
+	"loadorder": 1,
+	"title": "{{M-m alternation|Highly}} {{y-Y-O alternation|Entropic}} {{m-M alternation|Greetings}}",
+	"description": "Makes conversing with HEBs slightly more chaotic.",
+	"Tags": "cosmetic, conversation",
+	"version": "0.1",
+	"author": "{{c|MAFT}}",
+	"previewImage": "icon.png"
+}
